@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIFITE-OS | Ethical Hacking Learning Environment</title>
+    <meta name="description"
+        content="A professional educational platform for students to learn wireless security auditing with Wifite in a safe, simulated environment.">
+    <meta name="keywords"
+        content="ethical hacking, wifite, wireless security, cybersecurity education, nethunter simulation">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="scanlines"></div>
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="WIFITE_EDUCATIONAL_OS">WIFITE_EDUCATIONAL_OS</h1>
+            <p class="subtitle">Ethical Hacking Learning Environment</p>
+        </header>
+
+        <main>
+            <div id="welcome-screen">
+                <div class="info-card">
+                    <h2>SYSTEM INITIALIZED</h2>
+                    <p>Welcome, student. This environment is designed for educational purposes to understand wireless
+                        security auditing using Wifite.</p>
+
+                    <div class="steps-container">
+                        <h3>PRACTICE PROTOCOL: REAL-WORLD DISCOVERY</h3>
+
+                        <div class="step-item">
+                            <span class="step-number">01.</span>
+                            <span class="step-desc">Locate <code>scanner.py</code> in your project directory.</span>
+                        </div>
+
+                        <div class="step-item">
+                            <span class="step-number">02.</span>
+                            <span class="step-desc">Run <code>python scanner.py</code> in your terminal to capture
+                                metadata and stored credentials of nearby networks.</span>
+                        </div>
+
+                        <div class="step-item">
+                            <span class="step-number">03.</span>
+                            <span class="step-desc">Refresh this browser tab to synchronize the discovered data with the
+                                OS.</span>
+                        </div>
+
+                        <div class="step-item">
+                            <span class="step-number">04.</span>
+                            <span class="step-desc">Click the <strong>INITIALIZE WIFITE</strong> button to begin the
+                                security audit.</span>
+                        </div>
+
+                        <div class="download-box" style="display: flex; gap: 15px; align-items: center;">
+                            <a href="#" id="download-link" class="download-link">DOWNLOAD SCANNER BRIDGE [.PY]</a>
+                            <button id="copy-btn" class="download-link"
+                                style="cursor: pointer; background: rgba(0,255,0,0.1); border-color: #00ff00; color: #00ff00;">COPY
+                                CODE</button>
+                        </div>
+                        <div id="copy-status" style="color: #00ff00; font-size: 0.8rem; margin-top: 5px; height: 1em;">
+                        </div>
+                    </div>
+
+                    <div class="warning">
+                        <span>WARNING:</span> Use only on authorized networks. Ethical hacking requires permission.
+                    </div>
+                </div>
+
+                <button id="learn-btn" class="cyber-btn">
+                    <span class="btn-text">INITIALIZE WIFITE</span>
+                    <span class="btn-glitch"></span>
+                </button>
+            </div>
+
+            <div id="terminal-container" class="hidden">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">wifite@learning-shell: ~</div>
+                </div>
+                <div id="terminal"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="status-bar">
+                <span class="status-item">SEC_LEVEL: ALPHA</span>
+                <span class="status-item">WIFI_ADAPTER: wlan0mon</span>
+                <span class="status-item">STATUS: READY</span>
+            </div>
+        </footer>
+    </div>
+    <script src="real_networks.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
